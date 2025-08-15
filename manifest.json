@@ -1,0 +1,276 @@
+{
+  "source_base_path": "D:/SourceCode/Tools-Git/fanex-data",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.IObjectDb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.IObjectDb.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.IObjectDb",
+      "Summary": "<p sourcefile=\"api/Fanex.Data.IObjectDb.yml\" sourcestartlinenumber=\"1\">Represents a object db.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.MySql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.MySql.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.MySql",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.ObjectDbFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.ObjectDbFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.ObjectDbFactory",
+      "Summary": "<p sourcefile=\"api/Fanex.Data.ObjectDbFactory.yml\" sourcestartlinenumber=\"1\">Provides a factory for creating instances of object databases</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.Repository.CriteriaBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.Repository.CriteriaBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.Repository.CriteriaBase",
+      "Summary": "<p sourcefile=\"api/Fanex.Data.Repository.CriteriaBase.yml\" sourcestartlinenumber=\"1\">Represents a criteria base.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.Repository.ICriteria.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.Repository.ICriteria.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.Repository.ICriteria",
+      "Summary": "<p sourcefile=\"api/Fanex.Data.Repository.ICriteria.yml\" sourcestartlinenumber=\"1\">Represents a criteria.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.Repository.IDynamicRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.Repository.IDynamicRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.Repository.IDynamicRepository",
+      "Summary": "<p sourcefile=\"api/Fanex.Data.Repository.IDynamicRepository.yml\" sourcestartlinenumber=\"1\">Represents a dynamic repository.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.Repository.INonQueryCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.Repository.INonQueryCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.Repository.INonQueryCommand",
+      "Summary": "<p sourcefile=\"api/Fanex.Data.Repository.INonQueryCommand.yml\" sourcestartlinenumber=\"1\">Represents a non-query command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.Repository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.Repository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.Repository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.SqlServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.SqlServer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.SqlServer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/usages.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/usages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

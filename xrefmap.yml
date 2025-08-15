@@ -1,0 +1,614 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Fanex.Data
+  name: Fanex.Data
+  href: api/Fanex.Data.html
+  commentId: N:Fanex.Data
+  fullName: Fanex.Data
+  nameWithType: Fanex.Data
+- uid: Fanex.Data.IObjectDb
+  name: IObjectDb
+  href: api/Fanex.Data.IObjectDb.html
+  commentId: T:Fanex.Data.IObjectDb
+  fullName: Fanex.Data.IObjectDb
+  nameWithType: IObjectDb
+- uid: Fanex.Data.IObjectDb.ExecuteDataSet(System.Object,System.Data.Common.DbTransaction)
+  name: ExecuteDataSet(object, DbTransaction)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteDataSet_System_Object_System_Data_Common_DbTransaction_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteDataSet(System.Object,System.Data.Common.DbTransaction)
+  name.vb: ExecuteDataSet(Object, DbTransaction)
+  fullName: Fanex.Data.IObjectDb.ExecuteDataSet(object, System.Data.Common.DbTransaction)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteDataSet(Object, System.Data.Common.DbTransaction)
+  nameWithType: IObjectDb.ExecuteDataSet(object, DbTransaction)
+  nameWithType.vb: IObjectDb.ExecuteDataSet(Object, DbTransaction)
+- uid: Fanex.Data.IObjectDb.ExecuteDataSet*
+  name: ExecuteDataSet
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteDataSet_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteDataSet
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteDataSet
+  nameWithType: IObjectDb.ExecuteDataSet
+- uid: Fanex.Data.IObjectDb.ExecuteDataSetAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name: ExecuteDataSetAsync(object, DbTransaction, CancellationToken)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteDataSetAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteDataSetAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name.vb: ExecuteDataSetAsync(Object, DbTransaction, CancellationToken)
+  fullName: Fanex.Data.IObjectDb.ExecuteDataSetAsync(object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteDataSetAsync(Object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  nameWithType: IObjectDb.ExecuteDataSetAsync(object, DbTransaction, CancellationToken)
+  nameWithType.vb: IObjectDb.ExecuteDataSetAsync(Object, DbTransaction, CancellationToken)
+- uid: Fanex.Data.IObjectDb.ExecuteDataSetAsync*
+  name: ExecuteDataSetAsync
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteDataSetAsync_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteDataSetAsync
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteDataSetAsync
+  nameWithType: IObjectDb.ExecuteDataSetAsync
+- uid: Fanex.Data.IObjectDb.ExecuteNonQuery(System.Object,System.Data.Common.DbTransaction)
+  name: ExecuteNonQuery(object, DbTransaction)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteNonQuery_System_Object_System_Data_Common_DbTransaction_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteNonQuery(System.Object,System.Data.Common.DbTransaction)
+  name.vb: ExecuteNonQuery(Object, DbTransaction)
+  fullName: Fanex.Data.IObjectDb.ExecuteNonQuery(object, System.Data.Common.DbTransaction)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteNonQuery(Object, System.Data.Common.DbTransaction)
+  nameWithType: IObjectDb.ExecuteNonQuery(object, DbTransaction)
+  nameWithType.vb: IObjectDb.ExecuteNonQuery(Object, DbTransaction)
+- uid: Fanex.Data.IObjectDb.ExecuteNonQuery*
+  name: ExecuteNonQuery
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteNonQuery_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteNonQuery
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteNonQuery
+  nameWithType: IObjectDb.ExecuteNonQuery
+- uid: Fanex.Data.IObjectDb.ExecuteNonQueryAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name: ExecuteNonQueryAsync(object, DbTransaction, CancellationToken)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteNonQueryAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteNonQueryAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name.vb: ExecuteNonQueryAsync(Object, DbTransaction, CancellationToken)
+  fullName: Fanex.Data.IObjectDb.ExecuteNonQueryAsync(object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteNonQueryAsync(Object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  nameWithType: IObjectDb.ExecuteNonQueryAsync(object, DbTransaction, CancellationToken)
+  nameWithType.vb: IObjectDb.ExecuteNonQueryAsync(Object, DbTransaction, CancellationToken)
+- uid: Fanex.Data.IObjectDb.ExecuteNonQueryAsync*
+  name: ExecuteNonQueryAsync
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteNonQueryAsync_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteNonQueryAsync
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteNonQueryAsync
+  nameWithType: IObjectDb.ExecuteNonQueryAsync
+- uid: Fanex.Data.IObjectDb.ExecuteReader(System.Object,System.Data.Common.DbTransaction)
+  name: ExecuteReader(object, DbTransaction)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteReader_System_Object_System_Data_Common_DbTransaction_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteReader(System.Object,System.Data.Common.DbTransaction)
+  name.vb: ExecuteReader(Object, DbTransaction)
+  fullName: Fanex.Data.IObjectDb.ExecuteReader(object, System.Data.Common.DbTransaction)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteReader(Object, System.Data.Common.DbTransaction)
+  nameWithType: IObjectDb.ExecuteReader(object, DbTransaction)
+  nameWithType.vb: IObjectDb.ExecuteReader(Object, DbTransaction)
+- uid: Fanex.Data.IObjectDb.ExecuteReader*
+  name: ExecuteReader
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteReader_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteReader
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteReader
+  nameWithType: IObjectDb.ExecuteReader
+- uid: Fanex.Data.IObjectDb.ExecuteReaderAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name: ExecuteReaderAsync(object, DbTransaction, CancellationToken)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteReaderAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteReaderAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name.vb: ExecuteReaderAsync(Object, DbTransaction, CancellationToken)
+  fullName: Fanex.Data.IObjectDb.ExecuteReaderAsync(object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteReaderAsync(Object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  nameWithType: IObjectDb.ExecuteReaderAsync(object, DbTransaction, CancellationToken)
+  nameWithType.vb: IObjectDb.ExecuteReaderAsync(Object, DbTransaction, CancellationToken)
+- uid: Fanex.Data.IObjectDb.ExecuteReaderAsync*
+  name: ExecuteReaderAsync
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteReaderAsync_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteReaderAsync
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteReaderAsync
+  nameWithType: IObjectDb.ExecuteReaderAsync
+- uid: Fanex.Data.IObjectDb.ExecuteScalar(System.Object,System.Data.Common.DbTransaction)
+  name: ExecuteScalar(object, DbTransaction)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteScalar_System_Object_System_Data_Common_DbTransaction_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteScalar(System.Object,System.Data.Common.DbTransaction)
+  name.vb: ExecuteScalar(Object, DbTransaction)
+  fullName: Fanex.Data.IObjectDb.ExecuteScalar(object, System.Data.Common.DbTransaction)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteScalar(Object, System.Data.Common.DbTransaction)
+  nameWithType: IObjectDb.ExecuteScalar(object, DbTransaction)
+  nameWithType.vb: IObjectDb.ExecuteScalar(Object, DbTransaction)
+- uid: Fanex.Data.IObjectDb.ExecuteScalar*
+  name: ExecuteScalar
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteScalar_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteScalar
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteScalar
+  nameWithType: IObjectDb.ExecuteScalar
+- uid: Fanex.Data.IObjectDb.ExecuteScalarAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name: ExecuteScalarAsync(object, DbTransaction, CancellationToken)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteScalarAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.IObjectDb.ExecuteScalarAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name.vb: ExecuteScalarAsync(Object, DbTransaction, CancellationToken)
+  fullName: Fanex.Data.IObjectDb.ExecuteScalarAsync(object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.IObjectDb.ExecuteScalarAsync(Object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  nameWithType: IObjectDb.ExecuteScalarAsync(object, DbTransaction, CancellationToken)
+  nameWithType.vb: IObjectDb.ExecuteScalarAsync(Object, DbTransaction, CancellationToken)
+- uid: Fanex.Data.IObjectDb.ExecuteScalarAsync*
+  name: ExecuteScalarAsync
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_ExecuteScalarAsync_
+  commentId: Overload:Fanex.Data.IObjectDb.ExecuteScalarAsync
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.ExecuteScalarAsync
+  nameWithType: IObjectDb.ExecuteScalarAsync
+- uid: Fanex.Data.IObjectDb.Query*
+  name: Query
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_Query_
+  commentId: Overload:Fanex.Data.IObjectDb.Query
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.Query
+  nameWithType: IObjectDb.Query
+- uid: Fanex.Data.IObjectDb.QueryAsync*
+  name: QueryAsync
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_QueryAsync_
+  commentId: Overload:Fanex.Data.IObjectDb.QueryAsync
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.QueryAsync
+  nameWithType: IObjectDb.QueryAsync
+- uid: Fanex.Data.IObjectDb.QueryAsync``1(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name: QueryAsync<TReturn>(object, DbTransaction, CancellationToken)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_QueryAsync__1_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.IObjectDb.QueryAsync``1(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name.vb: QueryAsync(Of TReturn)(Object, DbTransaction, CancellationToken)
+  fullName: Fanex.Data.IObjectDb.QueryAsync<TReturn>(object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.IObjectDb.QueryAsync(Of TReturn)(Object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  nameWithType: IObjectDb.QueryAsync<TReturn>(object, DbTransaction, CancellationToken)
+  nameWithType.vb: IObjectDb.QueryAsync(Of TReturn)(Object, DbTransaction, CancellationToken)
+- uid: Fanex.Data.IObjectDb.QueryEntity*
+  name: QueryEntity
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_QueryEntity_
+  commentId: Overload:Fanex.Data.IObjectDb.QueryEntity
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.QueryEntity
+  nameWithType: IObjectDb.QueryEntity
+- uid: Fanex.Data.IObjectDb.QueryEntityAsync*
+  name: QueryEntityAsync
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_QueryEntityAsync_
+  commentId: Overload:Fanex.Data.IObjectDb.QueryEntityAsync
+  isSpec: "True"
+  fullName: Fanex.Data.IObjectDb.QueryEntityAsync
+  nameWithType: IObjectDb.QueryEntityAsync
+- uid: Fanex.Data.IObjectDb.QueryEntityAsync``1(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name: QueryEntityAsync<TReturn>(object, DbTransaction, CancellationToken)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_QueryEntityAsync__1_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.IObjectDb.QueryEntityAsync``1(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)
+  name.vb: QueryEntityAsync(Of TReturn)(Object, DbTransaction, CancellationToken)
+  fullName: Fanex.Data.IObjectDb.QueryEntityAsync<TReturn>(object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.IObjectDb.QueryEntityAsync(Of TReturn)(Object, System.Data.Common.DbTransaction, System.Threading.CancellationToken)
+  nameWithType: IObjectDb.QueryEntityAsync<TReturn>(object, DbTransaction, CancellationToken)
+  nameWithType.vb: IObjectDb.QueryEntityAsync(Of TReturn)(Object, DbTransaction, CancellationToken)
+- uid: Fanex.Data.IObjectDb.QueryEntity``1(System.Object,System.Data.Common.DbTransaction)
+  name: QueryEntity<TReturn>(object, DbTransaction)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_QueryEntity__1_System_Object_System_Data_Common_DbTransaction_
+  commentId: M:Fanex.Data.IObjectDb.QueryEntity``1(System.Object,System.Data.Common.DbTransaction)
+  name.vb: QueryEntity(Of TReturn)(Object, DbTransaction)
+  fullName: Fanex.Data.IObjectDb.QueryEntity<TReturn>(object, System.Data.Common.DbTransaction)
+  fullName.vb: Fanex.Data.IObjectDb.QueryEntity(Of TReturn)(Object, System.Data.Common.DbTransaction)
+  nameWithType: IObjectDb.QueryEntity<TReturn>(object, DbTransaction)
+  nameWithType.vb: IObjectDb.QueryEntity(Of TReturn)(Object, DbTransaction)
+- uid: Fanex.Data.IObjectDb.Query``1(System.Object,System.Data.Common.DbTransaction)
+  name: Query<TReturn>(object, DbTransaction)
+  href: api/Fanex.Data.IObjectDb.html#Fanex_Data_IObjectDb_Query__1_System_Object_System_Data_Common_DbTransaction_
+  commentId: M:Fanex.Data.IObjectDb.Query``1(System.Object,System.Data.Common.DbTransaction)
+  name.vb: Query(Of TReturn)(Object, DbTransaction)
+  fullName: Fanex.Data.IObjectDb.Query<TReturn>(object, System.Data.Common.DbTransaction)
+  fullName.vb: Fanex.Data.IObjectDb.Query(Of TReturn)(Object, System.Data.Common.DbTransaction)
+  nameWithType: IObjectDb.Query<TReturn>(object, DbTransaction)
+  nameWithType.vb: IObjectDb.Query(Of TReturn)(Object, DbTransaction)
+- uid: Fanex.Data.MySql
+  name: Fanex.Data.MySql
+  href: api/Fanex.Data.MySql.html
+  commentId: N:Fanex.Data.MySql
+  fullName: Fanex.Data.MySql
+  nameWithType: Fanex.Data.MySql
+- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions
+  name: MySqlDbSettingProviderManagerExtensions
+  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html
+  commentId: T:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions
+  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions
+  nameWithType: MySqlDbSettingProviderManagerExtensions
+- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager)
+  name: WithMySql(DbSettingProviderManager)
+  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_WithMySql_Fanex_Data_DbSettingProviderManager_
+  commentId: M:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager)
+  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager)
+  nameWithType: MySqlDbSettingProviderManagerExtensions.WithMySql(DbSettingProviderManager)
+- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql*
+  name: WithMySql
+  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_WithMySql_
+  commentId: Overload:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql
+  isSpec: "True"
+  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql
+  nameWithType: MySqlDbSettingProviderManagerExtensions.WithMySql
+- uid: Fanex.Data.ObjectDbFactory
+  name: ObjectDbFactory
+  href: api/Fanex.Data.ObjectDbFactory.html
+  commentId: T:Fanex.Data.ObjectDbFactory
+  fullName: Fanex.Data.ObjectDbFactory
+  nameWithType: ObjectDbFactory
+- uid: Fanex.Data.ObjectDbFactory.CreateInstance
+  name: CreateInstance
+  href: api/Fanex.Data.ObjectDbFactory.html#Fanex_Data_ObjectDbFactory_CreateInstance
+  commentId: P:Fanex.Data.ObjectDbFactory.CreateInstance
+  fullName: Fanex.Data.ObjectDbFactory.CreateInstance
+  nameWithType: ObjectDbFactory.CreateInstance
+- uid: Fanex.Data.ObjectDbFactory.CreateInstance*
+  name: CreateInstance
+  href: api/Fanex.Data.ObjectDbFactory.html#Fanex_Data_ObjectDbFactory_CreateInstance_
+  commentId: Overload:Fanex.Data.ObjectDbFactory.CreateInstance
+  isSpec: "True"
+  fullName: Fanex.Data.ObjectDbFactory.CreateInstance
+  nameWithType: ObjectDbFactory.CreateInstance
+- uid: Fanex.Data.Repository
+  name: Fanex.Data.Repository
+  href: api/Fanex.Data.Repository.html
+  commentId: N:Fanex.Data.Repository
+  fullName: Fanex.Data.Repository
+  nameWithType: Fanex.Data.Repository
+- uid: Fanex.Data.Repository.CriteriaBase
+  name: CriteriaBase
+  href: api/Fanex.Data.Repository.CriteriaBase.html
+  commentId: T:Fanex.Data.Repository.CriteriaBase
+  fullName: Fanex.Data.Repository.CriteriaBase
+  nameWithType: CriteriaBase
+- uid: Fanex.Data.Repository.CriteriaBase.GetSettingKey
+  name: GetSettingKey()
+  href: api/Fanex.Data.Repository.CriteriaBase.html#Fanex_Data_Repository_CriteriaBase_GetSettingKey
+  commentId: M:Fanex.Data.Repository.CriteriaBase.GetSettingKey
+  fullName: Fanex.Data.Repository.CriteriaBase.GetSettingKey()
+  nameWithType: CriteriaBase.GetSettingKey()
+- uid: Fanex.Data.Repository.CriteriaBase.GetSettingKey*
+  name: GetSettingKey
+  href: api/Fanex.Data.Repository.CriteriaBase.html#Fanex_Data_Repository_CriteriaBase_GetSettingKey_
+  commentId: Overload:Fanex.Data.Repository.CriteriaBase.GetSettingKey
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.CriteriaBase.GetSettingKey
+  nameWithType: CriteriaBase.GetSettingKey
+- uid: Fanex.Data.Repository.CriteriaBase.IsValid
+  name: IsValid()
+  href: api/Fanex.Data.Repository.CriteriaBase.html#Fanex_Data_Repository_CriteriaBase_IsValid
+  commentId: M:Fanex.Data.Repository.CriteriaBase.IsValid
+  fullName: Fanex.Data.Repository.CriteriaBase.IsValid()
+  nameWithType: CriteriaBase.IsValid()
+- uid: Fanex.Data.Repository.CriteriaBase.IsValid*
+  name: IsValid
+  href: api/Fanex.Data.Repository.CriteriaBase.html#Fanex_Data_Repository_CriteriaBase_IsValid_
+  commentId: Overload:Fanex.Data.Repository.CriteriaBase.IsValid
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.CriteriaBase.IsValid
+  nameWithType: CriteriaBase.IsValid
+- uid: Fanex.Data.Repository.ICriteria
+  name: ICriteria
+  href: api/Fanex.Data.Repository.ICriteria.html
+  commentId: T:Fanex.Data.Repository.ICriteria
+  fullName: Fanex.Data.Repository.ICriteria
+  nameWithType: ICriteria
+- uid: Fanex.Data.Repository.ICriteria.GetSettingKey
+  name: GetSettingKey()
+  href: api/Fanex.Data.Repository.ICriteria.html#Fanex_Data_Repository_ICriteria_GetSettingKey
+  commentId: M:Fanex.Data.Repository.ICriteria.GetSettingKey
+  fullName: Fanex.Data.Repository.ICriteria.GetSettingKey()
+  nameWithType: ICriteria.GetSettingKey()
+- uid: Fanex.Data.Repository.ICriteria.GetSettingKey*
+  name: GetSettingKey
+  href: api/Fanex.Data.Repository.ICriteria.html#Fanex_Data_Repository_ICriteria_GetSettingKey_
+  commentId: Overload:Fanex.Data.Repository.ICriteria.GetSettingKey
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.ICriteria.GetSettingKey
+  nameWithType: ICriteria.GetSettingKey
+- uid: Fanex.Data.Repository.ICriteria.IsValid
+  name: IsValid()
+  href: api/Fanex.Data.Repository.ICriteria.html#Fanex_Data_Repository_ICriteria_IsValid
+  commentId: M:Fanex.Data.Repository.ICriteria.IsValid
+  fullName: Fanex.Data.Repository.ICriteria.IsValid()
+  nameWithType: ICriteria.IsValid()
+- uid: Fanex.Data.Repository.ICriteria.IsValid*
+  name: IsValid
+  href: api/Fanex.Data.Repository.ICriteria.html#Fanex_Data_Repository_ICriteria_IsValid_
+  commentId: Overload:Fanex.Data.Repository.ICriteria.IsValid
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.ICriteria.IsValid
+  nameWithType: ICriteria.IsValid
+- uid: Fanex.Data.Repository.IDynamicRepository
+  name: IDynamicRepository
+  href: api/Fanex.Data.Repository.IDynamicRepository.html
+  commentId: T:Fanex.Data.Repository.IDynamicRepository
+  fullName: Fanex.Data.Repository.IDynamicRepository
+  nameWithType: IDynamicRepository
+- uid: Fanex.Data.Repository.IDynamicRepository.Execute(Fanex.Data.Repository.INonQueryCommand,System.String)
+  name: Execute(INonQueryCommand, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_Execute_Fanex_Data_Repository_INonQueryCommand_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.Execute(Fanex.Data.Repository.INonQueryCommand,System.String)
+  name.vb: Execute(INonQueryCommand, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.Execute(Fanex.Data.Repository.INonQueryCommand, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.Execute(Fanex.Data.Repository.INonQueryCommand, String)
+  nameWithType: IDynamicRepository.Execute(INonQueryCommand, string)
+  nameWithType.vb: IDynamicRepository.Execute(INonQueryCommand, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.Execute*
+  name: Execute
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_Execute_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.Execute
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.Execute
+  nameWithType: IDynamicRepository.Execute
+- uid: Fanex.Data.Repository.IDynamicRepository.ExecuteAsync(Fanex.Data.Repository.INonQueryCommand,System.String,System.Threading.CancellationToken)
+  name: ExecuteAsync(INonQueryCommand, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_ExecuteAsync_Fanex_Data_Repository_INonQueryCommand_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.ExecuteAsync(Fanex.Data.Repository.INonQueryCommand,System.String,System.Threading.CancellationToken)
+  name.vb: ExecuteAsync(INonQueryCommand, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.ExecuteAsync(Fanex.Data.Repository.INonQueryCommand, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.ExecuteAsync(Fanex.Data.Repository.INonQueryCommand, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.ExecuteAsync(INonQueryCommand, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.ExecuteAsync(INonQueryCommand, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_ExecuteAsync_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.ExecuteAsync
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.ExecuteAsync
+  nameWithType: IDynamicRepository.ExecuteAsync
+- uid: Fanex.Data.Repository.IDynamicRepository.Fetch*
+  name: Fetch
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_Fetch_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.Fetch
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.Fetch
+  nameWithType: IDynamicRepository.Fetch
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchAsync*
+  name: FetchAsync
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchAsync_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.FetchAsync
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchAsync
+  nameWithType: IDynamicRepository.FetchAsync
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchAsync``1(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: FetchAsync<T>(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchAsync__1_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchAsync``1(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: FetchAsync(Of T)(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchAsync<T>(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchAsync(Of T)(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchAsync<T>(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchAsync(Of T)(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchDataSet(Fanex.Data.Repository.ICriteria,System.String)
+  name: FetchDataSet(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchDataSet_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchDataSet(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: FetchDataSet(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchDataSet(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchDataSet(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.FetchDataSet(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.FetchDataSet(ICriteria, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchDataSet*
+  name: FetchDataSet
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchDataSet_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.FetchDataSet
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchDataSet
+  nameWithType: IDynamicRepository.FetchDataSet
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: FetchDataSetAsync(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchDataSetAsync_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: FetchDataSetAsync(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchDataSetAsync(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchDataSetAsync(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync*
+  name: FetchDataSetAsync
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchDataSetAsync_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync
+  nameWithType: IDynamicRepository.FetchDataSetAsync
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Fanex.Data.Repository.ICriteria,System.Type[],System.String)
+  name: FetchMultiple(ICriteria, Type[], string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultiple_Fanex_Data_Repository_ICriteria_System_Type___System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Fanex.Data.Repository.ICriteria,System.Type[],System.String)
+  name.vb: FetchMultiple(ICriteria, Type(), String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Fanex.Data.Repository.ICriteria, System.Type[], string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Fanex.Data.Repository.ICriteria, System.Type(), String)
+  nameWithType: IDynamicRepository.FetchMultiple(ICriteria, Type[], string)
+  nameWithType.vb: IDynamicRepository.FetchMultiple(ICriteria, Type(), String)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultiple*
+  name: FetchMultiple
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultiple_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.FetchMultiple
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultiple
+  nameWithType: IDynamicRepository.FetchMultiple
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Fanex.Data.Repository.ICriteria,System.Type[],System.String,System.Threading.CancellationToken)
+  name: FetchMultipleAsync(ICriteria, Type[], string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_Fanex_Data_Repository_ICriteria_System_Type___System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Fanex.Data.Repository.ICriteria,System.Type[],System.String,System.Threading.CancellationToken)
+  name.vb: FetchMultipleAsync(ICriteria, Type(), String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Fanex.Data.Repository.ICriteria, System.Type[], string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Fanex.Data.Repository.ICriteria, System.Type(), String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchMultipleAsync(ICriteria, Type[], string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchMultipleAsync(ICriteria, Type(), String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync*
+  name: FetchMultipleAsync
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync
+  nameWithType: IDynamicRepository.FetchMultipleAsync
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``2(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: FetchMultipleAsync<T1, T2>(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__2_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``2(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: FetchMultipleAsync(Of T1, T2)(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync<T1, T2>(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Of T1, T2)(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchMultipleAsync<T1, T2>(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchMultipleAsync(Of T1, T2)(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``3(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: FetchMultipleAsync<T1, T2, T3>(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__3_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``3(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: FetchMultipleAsync(Of T1, T2, T3)(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync<T1, T2, T3>(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3)(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchMultipleAsync<T1, T2, T3>(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3)(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``4(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: FetchMultipleAsync<T1, T2, T3, T4>(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__4_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``4(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: FetchMultipleAsync(Of T1, T2, T3, T4)(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync<T1, T2, T3, T4>(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3, T4)(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchMultipleAsync<T1, T2, T3, T4>(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3, T4)(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``5(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: FetchMultipleAsync<T1, T2, T3, T4, T5>(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__5_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``5(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: FetchMultipleAsync(Of T1, T2, T3, T4, T5)(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync<T1, T2, T3, T4, T5>(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3, T4, T5)(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchMultipleAsync<T1, T2, T3, T4, T5>(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3, T4, T5)(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``6(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: FetchMultipleAsync<T1, T2, T3, T4, T5, T6>(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__6_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``6(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: FetchMultipleAsync(Of T1, T2, T3, T4, T5, T6)(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync<T1, T2, T3, T4, T5, T6>(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3, T4, T5, T6)(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.FetchMultipleAsync<T1, T2, T3, T4, T5, T6>(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.FetchMultipleAsync(Of T1, T2, T3, T4, T5, T6)(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultiple``2(Fanex.Data.Repository.ICriteria,System.String)
+  name: FetchMultiple<T1, T2>(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultiple__2_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultiple``2(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: FetchMultiple(Of T1, T2)(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultiple<T1, T2>(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Of T1, T2)(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.FetchMultiple<T1, T2>(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.FetchMultiple(Of T1, T2)(ICriteria, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultiple``3(Fanex.Data.Repository.ICriteria,System.String)
+  name: FetchMultiple<T1, T2, T3>(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultiple__3_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultiple``3(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: FetchMultiple(Of T1, T2, T3)(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultiple<T1, T2, T3>(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Of T1, T2, T3)(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.FetchMultiple<T1, T2, T3>(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.FetchMultiple(Of T1, T2, T3)(ICriteria, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultiple``4(Fanex.Data.Repository.ICriteria,System.String)
+  name: FetchMultiple<T1, T2, T3, T4>(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultiple__4_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultiple``4(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: FetchMultiple(Of T1, T2, T3, T4)(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultiple<T1, T2, T3, T4>(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Of T1, T2, T3, T4)(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.FetchMultiple<T1, T2, T3, T4>(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.FetchMultiple(Of T1, T2, T3, T4)(ICriteria, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultiple``5(Fanex.Data.Repository.ICriteria,System.String)
+  name: FetchMultiple<T1, T2, T3, T4, T5>(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultiple__5_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultiple``5(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: FetchMultiple(Of T1, T2, T3, T4, T5)(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultiple<T1, T2, T3, T4, T5>(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Of T1, T2, T3, T4, T5)(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.FetchMultiple<T1, T2, T3, T4, T5>(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.FetchMultiple(Of T1, T2, T3, T4, T5)(ICriteria, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.FetchMultiple``6(Fanex.Data.Repository.ICriteria,System.String)
+  name: FetchMultiple<T1, T2, T3, T4, T5, T6>(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_FetchMultiple__6_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.FetchMultiple``6(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: FetchMultiple(Of T1, T2, T3, T4, T5, T6)(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.FetchMultiple<T1, T2, T3, T4, T5, T6>(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Of T1, T2, T3, T4, T5, T6)(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.FetchMultiple<T1, T2, T3, T4, T5, T6>(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.FetchMultiple(Of T1, T2, T3, T4, T5, T6)(ICriteria, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.Fetch``1(Fanex.Data.Repository.ICriteria,System.String)
+  name: Fetch<T>(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_Fetch__1_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.Fetch``1(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: Fetch(Of T)(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.Fetch<T>(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.Fetch(Of T)(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.Fetch<T>(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.Fetch(Of T)(ICriteria, String)
+- uid: Fanex.Data.Repository.IDynamicRepository.Get*
+  name: Get
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_Get_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.Get
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.Get
+  nameWithType: IDynamicRepository.Get
+- uid: Fanex.Data.Repository.IDynamicRepository.GetAsync*
+  name: GetAsync
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_GetAsync_
+  commentId: Overload:Fanex.Data.Repository.IDynamicRepository.GetAsync
+  isSpec: "True"
+  fullName: Fanex.Data.Repository.IDynamicRepository.GetAsync
+  nameWithType: IDynamicRepository.GetAsync
+- uid: Fanex.Data.Repository.IDynamicRepository.GetAsync``1(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name: GetAsync<T>(ICriteria, string, CancellationToken)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_GetAsync__1_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.GetAsync``1(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)
+  name.vb: GetAsync(Of T)(ICriteria, String, CancellationToken)
+  fullName: Fanex.Data.Repository.IDynamicRepository.GetAsync<T>(Fanex.Data.Repository.ICriteria, string, System.Threading.CancellationToken)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.GetAsync(Of T)(Fanex.Data.Repository.ICriteria, String, System.Threading.CancellationToken)
+  nameWithType: IDynamicRepository.GetAsync<T>(ICriteria, string, CancellationToken)
+  nameWithType.vb: IDynamicRepository.GetAsync(Of T)(ICriteria, String, CancellationToken)
+- uid: Fanex.Data.Repository.IDynamicRepository.Get``1(Fanex.Data.Repository.ICriteria,System.String)
+  name: Get<T>(ICriteria, string)
+  href: api/Fanex.Data.Repository.IDynamicRepository.html#Fanex_Data_Repository_IDynamicRepository_Get__1_Fanex_Data_Repository_ICriteria_System_String_
+  commentId: M:Fanex.Data.Repository.IDynamicRepository.Get``1(Fanex.Data.Repository.ICriteria,System.String)
+  name.vb: Get(Of T)(ICriteria, String)
+  fullName: Fanex.Data.Repository.IDynamicRepository.Get<T>(Fanex.Data.Repository.ICriteria, string)
+  fullName.vb: Fanex.Data.Repository.IDynamicRepository.Get(Of T)(Fanex.Data.Repository.ICriteria, String)
+  nameWithType: IDynamicRepository.Get<T>(ICriteria, string)
+  nameWithType.vb: IDynamicRepository.Get(Of T)(ICriteria, String)
+- uid: Fanex.Data.Repository.INonQueryCommand
+  name: INonQueryCommand
+  href: api/Fanex.Data.Repository.INonQueryCommand.html
+  commentId: T:Fanex.Data.Repository.INonQueryCommand
+  fullName: Fanex.Data.Repository.INonQueryCommand
+  nameWithType: INonQueryCommand
+- uid: Fanex.Data.SqlServer
+  name: Fanex.Data.SqlServer
+  href: api/Fanex.Data.SqlServer.html
+  commentId: N:Fanex.Data.SqlServer
+  fullName: Fanex.Data.SqlServer
+  nameWithType: Fanex.Data.SqlServer
+- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions
+  name: SqlDbSettingProviderManagerExtensions
+  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html
+  commentId: T:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions
+  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions
+  nameWithType: SqlDbSettingProviderManagerExtensions
+- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.SqlProviderName
+  name: SqlProviderName
+  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_SqlProviderName
+  commentId: F:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.SqlProviderName
+  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.SqlProviderName
+  nameWithType: SqlDbSettingProviderManagerExtensions.SqlProviderName
+- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager)
+  name: WithSqlServer(DbSettingProviderManager)
+  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_Fanex_Data_DbSettingProviderManager_
+  commentId: M:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager)
+  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager)
+  nameWithType: SqlDbSettingProviderManagerExtensions.WithSqlServer(DbSettingProviderManager)
+- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer*
+  name: WithSqlServer
+  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_
+  commentId: Overload:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer
+  isSpec: "True"
+  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer
+  nameWithType: SqlDbSettingProviderManagerExtensions.WithSqlServer

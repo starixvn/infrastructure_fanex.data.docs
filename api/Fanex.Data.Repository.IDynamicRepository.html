@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IDynamicRepository | Fanex.Data </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IDynamicRepository | Fanex.Data ">
+    
+    <meta name="description" content="Represents a dynamic repository.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Fanex.Data">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fanex.Data.Repository.IDynamicRepository">
+
+
+
+  <h1 id="Fanex_Data_Repository_IDynamicRepository" data-uid="Fanex.Data.Repository.IDynamicRepository" class="text-break">Interface IDynamicRepository</h1>
+  <div class="markdown level0 summary"><p>Represents a dynamic repository.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fanex.html">Fanex</a>.<a class="xref" href="Fanex.Data.html">Data</a>.<a class="xref" href="Fanex.Data.Repository.html">Repository</a></h6>
+  <h6><strong>Assembly</strong>: Fanex.Data.Repository.dll</h6>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDynamicRepository</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_Execute_" data-uid="Fanex.Data.Repository.IDynamicRepository.Execute*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_Execute_Fanex_Data_Repository_INonQueryCommand_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.Execute(Fanex.Data.Repository.INonQueryCommand,System.String)">Execute(INonQueryCommand, string)</h4>
+  <div class="markdown level1 summary"><p>Executes a non-query command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Execute(INonQueryCommand command, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.INonQueryCommand.html">INonQueryCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>The number of rows affected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_Execute_Fanex_Data_Repository_INonQueryCommand_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var command = new UpdateProductCommand();
+var rowsAffected = repository.Execute(command);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_ExecuteAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.ExecuteAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_ExecuteAsync_Fanex_Data_Repository_INonQueryCommand_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.ExecuteAsync(Fanex.Data.Repository.INonQueryCommand,System.String,System.Threading.CancellationToken)">ExecuteAsync(INonQueryCommand, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Executes a non-query command asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; ExecuteAsync(INonQueryCommand command, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.INonQueryCommand.html">INonQueryCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">int</span>&gt;</td>
+        <td><p>The number of rows affected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_ExecuteAsync_Fanex_Data_Repository_INonQueryCommand_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var command = new UpdateProductCommand();
+var rowsAffected = await repository.ExecuteAsync(command);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchAsync__1_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchAsync``1(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">FetchAsync&lt;T&gt;(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches a result asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;T&gt;&gt; FetchAsync&lt;T&gt;(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchAsync__1_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductCriteria();
+var product = await repository.FetchAsync&lt;Product&gt;(criteria);</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">var criteria = new QueryProductCountCriteria();
+var productIds = await repository.FetchAsync&lt;int&gt;(criteria, "127.0.0.1");</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">var criteria = new QueryProductNameCriteria();
+var productNames = await repository.FetchAsync&lt;string&gt;(criteria, "127.0.0.1");</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchDataSet_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchDataSet*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchDataSet_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchDataSet(Fanex.Data.Repository.ICriteria,System.String)">FetchDataSet(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches a data set from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DataSet FetchDataSet(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataSet</span></td>
+        <td><p>The data set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchDataSet_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductCriteria();
+var dataSet = repository.FetchDataSet(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchDataSetAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchDataSetAsync_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchDataSetAsync(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">FetchDataSetAsync(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches a data set asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DataSet&gt; FetchDataSetAsync(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">DataSet</span>&gt;</td>
+        <td><p>The data set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchDataSetAsync_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductCriteria();
+var dataSet = await repository.FetchDataSetAsync(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple_Fanex_Data_Repository_ICriteria_System_Type___System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple(Fanex.Data.Repository.ICriteria,System.Type[],System.String)">FetchMultiple(ICriteria, Type[], string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;object&gt;[] FetchMultiple(ICriteria criteria, Type[] mappingTypes, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span>[]</td>
+        <td><span class="parametername">mappingTypes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">object</span>&gt;[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_Fanex_Data_Repository_ICriteria_System_Type___System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync(Fanex.Data.Repository.ICriteria,System.Type[],System.String,System.Threading.CancellationToken)">FetchMultipleAsync(ICriteria, Type[], string, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;object&gt;[]&gt; FetchMultipleAsync(ICriteria criteria, Type[] mappingTypes, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span>[]</td>
+        <td><span class="parametername">mappingTypes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">object</span>&gt;[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__2_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``2(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">FetchMultipleAsync&lt;T1, T2&gt;(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet)&gt; FetchMultipleAsync&lt;T1, T2&gt;(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>)&gt;</td>
+        <td><p>The results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__2_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories) = await repository.FetchMultipleAsync&lt;Product, Category&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__3_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``3(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">FetchMultipleAsync&lt;T1, T2, T3&gt;(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet)&gt; FetchMultipleAsync&lt;T1, T2, T3&gt;(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>)&gt;</td>
+        <td><p>The results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__3_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders) = await repository.FetchMultipleAsync&lt;Product, Category, Order&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__4_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``4(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">FetchMultipleAsync&lt;T1, T2, T3, T4&gt;(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet, IEnumerable&lt;T4&gt; FourthResultSet)&gt; FetchMultipleAsync&lt;T1, T2, T3, T4&gt;(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>, <span class="xref">IEnumerable</span>&lt;T4&gt; <span class="xref">FourthResultSet</span>)&gt;</td>
+        <td><p>The results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__4_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders, customers) = await repository.FetchMultipleAsync&lt;Product, Category, Order, Customer&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__5_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``5(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">FetchMultipleAsync&lt;T1, T2, T3, T4, T5&gt;(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet, IEnumerable&lt;T4&gt; FourthResultSet, IEnumerable&lt;T5&gt; FifthResultSet)&gt; FetchMultipleAsync&lt;T1, T2, T3, T4, T5&gt;(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>, <span class="xref">IEnumerable</span>&lt;T4&gt; <span class="xref">FourthResultSet</span>, <span class="xref">IEnumerable</span>&lt;T5&gt; <span class="xref">FifthResultSet</span>)&gt;</td>
+        <td><p>The results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__5_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders, customers, orderDetails) = await repository.FetchMultipleAsync&lt;Product, Category, Order, Customer, OrderDetail&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__6_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultipleAsync``6(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">FetchMultipleAsync&lt;T1, T2, T3, T4, T5, T6&gt;(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet, IEnumerable&lt;T4&gt; FourthResultSet, IEnumerable&lt;T5&gt; FifthResultSet, IEnumerable&lt;T6&gt; SixthResultSet)&gt; FetchMultipleAsync&lt;T1, T2, T3, T4, T5, T6&gt;(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.<br>
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>, <span class="xref">IEnumerable</span>&lt;T4&gt; <span class="xref">FourthResultSet</span>, <span class="xref">IEnumerable</span>&lt;T5&gt; <span class="xref">FifthResultSet</span>, <span class="xref">IEnumerable</span>&lt;T6&gt; <span class="xref">SixthResultSet</span>)&gt;</td>
+        <td><p>The results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultipleAsync__6_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders, customers, orderDetails, addresses) = await repository.FetchMultipleAsync&lt;Product, Category, Order, Customer, OrderDetail, Address&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__2_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple``2(Fanex.Data.Repository.ICriteria,System.String)">FetchMultiple&lt;T1, T2&gt;(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet) FetchMultiple&lt;T1, T2&gt;(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__2_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories) = repository.FetchMultiple&lt;Product, Category&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__3_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple``3(Fanex.Data.Repository.ICriteria,System.String)">FetchMultiple&lt;T1, T2, T3&gt;(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet) FetchMultiple&lt;T1, T2, T3&gt;(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__3_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders) = repository.FetchMultiple&lt;Product, Category, Order&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__4_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple``4(Fanex.Data.Repository.ICriteria,System.String)">FetchMultiple&lt;T1, T2, T3, T4&gt;(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet, IEnumerable&lt;T4&gt; FourthResultSet) FetchMultiple&lt;T1, T2, T3, T4&gt;(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>, <span class="xref">IEnumerable</span>&lt;T4&gt; <span class="xref">FourthResultSet</span>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__4_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders, customers) = repository.FetchMultiple&lt;Product, Category, Order, Customer&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__5_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple``5(Fanex.Data.Repository.ICriteria,System.String)">FetchMultiple&lt;T1, T2, T3, T4, T5&gt;(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet, IEnumerable&lt;T4&gt; FourthResultSet, IEnumerable&lt;T5&gt; FifthResultSet) FetchMultiple&lt;T1, T2, T3, T4, T5&gt;(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>, <span class="xref">IEnumerable</span>&lt;T4&gt; <span class="xref">FourthResultSet</span>, <span class="xref">IEnumerable</span>&lt;T5&gt; <span class="xref">FifthResultSet</span>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__5_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders, customers, orderDetails) = repository.FetchMultiple&lt;Product, Category, Order, Customer, OrderDetail&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__6_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.FetchMultiple``6(Fanex.Data.Repository.ICriteria,System.String)">FetchMultiple&lt;T1, T2, T3, T4, T5, T6&gt;(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches multiple results from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(IEnumerable&lt;T1&gt; FirstResultSet, IEnumerable&lt;T2&gt; SecondResultSet, IEnumerable&lt;T3&gt; ThirdResultSet, IEnumerable&lt;T4&gt; FourthResultSet, IEnumerable&lt;T5&gt; FifthResultSet, IEnumerable&lt;T6&gt; SixthResultSet) FetchMultiple&lt;T1, T2, T3, T4, T5, T6&gt;(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.<br>
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<span class="xref">IEnumerable</span>&lt;T1&gt; <span class="xref">FirstResultSet</span>, <span class="xref">IEnumerable</span>&lt;T2&gt; <span class="xref">SecondResultSet</span>, <span class="xref">IEnumerable</span>&lt;T3&gt; <span class="xref">ThirdResultSet</span>, <span class="xref">IEnumerable</span>&lt;T4&gt; <span class="xref">FourthResultSet</span>, <span class="xref">IEnumerable</span>&lt;T5&gt; <span class="xref">FifthResultSet</span>, <span class="xref">IEnumerable</span>&lt;T6&gt; <span class="xref">SixthResultSet</span>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth result set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_FetchMultiple__6_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductsCriteria();
+var (products, categories, orders, customers, orderDetails, addresses) = repository.FetchMultiple&lt;Product, Category, Order, Customer, OrderDetail, Address&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_Fetch_" data-uid="Fanex.Data.Repository.IDynamicRepository.Fetch*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_Fetch__1_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.Fetch``1(Fanex.Data.Repository.ICriteria,System.String)">Fetch&lt;T&gt;(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches a result from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; Fetch&lt;T&gt;(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_Fetch__1_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductCriteria();
+var product = repository.Fetch&lt;Product&gt;(criteria);</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_GetAsync_" data-uid="Fanex.Data.Repository.IDynamicRepository.GetAsync*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_GetAsync__1_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken_" data-uid="Fanex.Data.Repository.IDynamicRepository.GetAsync``1(Fanex.Data.Repository.ICriteria,System.String,System.Threading.CancellationToken)">GetAsync&lt;T&gt;(ICriteria, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches a result asynchronously from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;T&gt; GetAsync&lt;T&gt;(ICriteria criteria, string serverIp = &quot;&quot;, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_GetAsync__1_Fanex_Data_Repository_ICriteria_System_String_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductCriteria();
+var product = await repository.GetAsync&lt;Product&gt;(criteria);</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">var criteria = new QueryProductCountCriteria();
+var productCount = await repository.GetAsync&lt;int&gt;(criteria, "127.0.0.1");</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">var criteria = new QueryProductNameCriteria();
+var productName = await repository.GetAsync&lt;string&gt;(criteria, "127.0.0.1");</code></pre>
+
+
+
+  <a id="Fanex_Data_Repository_IDynamicRepository_Get_" data-uid="Fanex.Data.Repository.IDynamicRepository.Get*"></a>
+  <h4 id="Fanex_Data_Repository_IDynamicRepository_Get__1_Fanex_Data_Repository_ICriteria_System_String_" data-uid="Fanex.Data.Repository.IDynamicRepository.Get``1(Fanex.Data.Repository.ICriteria,System.String)">Get&lt;T&gt;(ICriteria, string)</h4>
+  <div class="markdown level1 summary"><p>Fetches a result from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Get&lt;T&gt;(ICriteria criteria, string serverIp = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fanex.Data.Repository.ICriteria.html">ICriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">serverIp</span></td>
+        <td><p>The server ip. It is used to specify the server ip to connect to.
+If not specified, the server ip will be read from the configuration file.
+If the server ip is specified, the server ip in connection string will be updated with the server ip.
+This parameter is useful when you want to connect to a different server based on the database cluster.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_Repository_IDynamicRepository_Get__1_Fanex_Data_Repository_ICriteria_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">var criteria = new QueryProductCriteria();
+var product = repository.Get&lt;Product&gt;(criteria);</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">var criteria = new QueryProductCountCriteria();
+var productCount = repository.Get&lt;int&gt;(criteria, "127.0.0.1");</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">var criteria = new QueryProductNameCriteria();
+var productName = repository.Get&lt;string&gt;(criteria, "127.0.0.1");</code></pre>
+
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Fanex.Data.Repository.IDynamicRepository.html">IDynamicRepository</a></div>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

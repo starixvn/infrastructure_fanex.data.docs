@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>ObjectDb Examples | Fanex.Data </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="ObjectDb Examples | Fanex.Data ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Fanex.Data">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="objectdb-examples">ObjectDb Examples</h1>
+
+<h3 id="query-entity-with-parameter-set-being-an-anonymous-object">Query Entity With Parameter Set Being An Anonymous Object</h3>
+<p>Query a single entity using an anonymous object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new
+{
+    OrderId = orderId,
+    TotalOrder = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrderByIdSettingKey);
+var order = objectDb.QueryEntity&lt;Order&gt;(parameterSet);
+
+Console.WriteLine($&quot;ShipAddress: {order.ShipAddress}&quot;);
+Console.WriteLine($&quot;Total Orders: {parameterSet.TotalOrder}&quot;);
+</code></pre>
+<h3 id="query-entity-with-parameter-set-being-a-hashtable">Query Entity With Parameter Set Being A Hashtable</h3>
+<p>Query a single entity using a Hashtable as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new Hashtable(StringComparer.OrdinalIgnoreCase)
+{
+    [OrderIdParameterName] = orderId,
+    [&quot;TotalOrder&quot;] = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrderByIdSettingKey);
+var order = objectDb.QueryEntity&lt;Order&gt;(parameterSet);
+
+Console.WriteLine($&quot;ShipAddress: {order.ShipAddress}&quot;);
+Console.WriteLine($&quot;Total Orders: {parameterSet[&quot;TotalOrder&quot;]}&quot;);
+</code></pre>
+<h2 id="query-entity-with-parameter-set-being-a-strongly-typed-object">Query Entity With Parameter Set Being A Strongly Typed Object</h2>
+<p>Query a single entity using a strongly typed object as parameter set.</p>
+<pre><code class="lang-csharp">// Arrange.
+var parameterSet = new OrderByIdQuery
+{
+    OrderId = orderId,
+    TotalOrder = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrderByIdSettingKey);
+var order = objectDb.QueryEntity&lt;Order&gt;(parameterSet);
+
+Console.WriteLine($&quot;ShipAddress: {order.ShipAddress}&quot;);
+Console.WriteLine($&quot;Total Orders: {parameterSet.TotalOrder}&quot;);
+</code></pre>
+<h3 id="query-list-object-with-parameter-set-being-an-anonymous-object">Query List Object With Parameter Set Being An Anonymous Object</h3>
+<p>Query a list of objects using an anonymous object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new
+{
+    CustomerId = TestedCustomerId,
+    PageIndex = 1,
+    PageSize = 10,
+    TotalOrder = 0
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(&quot;QueryOrderByCustomerId&quot;);
+var orders = objectDb.Query&lt;Order&gt;(parameterSet);
+
+Console.WriteLine($&quot;Got {orders.Count()} of {parameterSet.TotalOrder} orders&quot;);
+</code></pre>
+<h3 id="query-list-object-with-parameter-set-being-a-hashtable">Query List Object With Parameter Set Being A Hashtable</h3>
+<p>Query a list of objects using a Hashtable as parameter set.</p>
+<pre><code class="lang-csharp">// Arrange.
+var parameterSet = new Hashtable(StringComparer.OrdinalIgnoreCase)
+{
+    [CustomerIdParameterName] = TestedCustomerId,
+    [&quot;PageIndex&quot;] = 1,
+    [&quot;PageSize&quot;] = 10,
+    [&quot;TotalOrder&quot;] = 0
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(&quot;QueryOrderByCustomerId&quot;);
+var orders = objectDb.Query&lt;Order&gt;(parameterSet);
+
+Console.WriteLine($&quot;Got {orders.Count()} of {parameterSet[&quot;TotalOrder&quot;]} orders&quot;);
+</code></pre>
+<h3 id="query-list-object-with-parameter-set-being-a-strongly-typed-object">Query List Object With Parameter Set Being A Strongly Typed Object</h3>
+<p>Query a list of objects using a strongly typed object as parameter set.</p>
+<pre><code class="lang-csharp">// Arrange.
+var parameterSet = new OrdersByCustomerIdQuery
+{
+    CustomerId = TestedCustomerId,
+    PageIndex = 1,
+    PageSize = 10,
+    TotalOrder = 0
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(&quot;QueryOrderByCustomerId&quot;);
+var orders = objectDb.Query&lt;Order&gt;(parameterSet);
+
+Console.WriteLine($&quot;Got {orders.Count()} of {parameterSet.TotalOrder} orders&quot;);
+</code></pre>
+<h3 id="query-multiple-with-parameter-set-being-an-anonymous-object">Query Multiple With Parameter Set Being An Anonymous Object</h3>
+<p>Query multiple result sets using an anonymous object as parameter set.</p>
+<pre><code class="lang-csharp">// Arrange.
+var parameterSet = new
+{
+    OrderId = TestedOrderId,
+    TotalCustomer = 0
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrderDetailByIdSettingKey);
+using var multiResultReader = objectDb.QueryMultiple(parameterSet);
+
+var orders = multiResultReader.Read&lt;Order&gt;();
+var orderDetails = multiResultReader.Read&lt;OrderDetails&gt;();
+
+Console.WriteLine($&quot;Total Customers: {parameterSet.TotalCustomer}&quot;);
+Console.WriteLine($&quot;Total Orders: {orders.Count()}&quot;);
+Console.WriteLine($&quot;Total Order Details: {orderDetails.Count()}&quot;);
+</code></pre>
+<h3 id="query-multiple-with-parameter-set-being-a-hashtable">Query Multiple With Parameter Set Being A Hashtable</h3>
+<p>Query multiple result sets using a Hashtable as parameter set.</p>
+<pre><code class="lang-csharp">// Arrange.
+var parameterSet = new Hashtable(StringComparer.OrdinalIgnoreCase)
+{
+    [OrderIdParameterName] = TestedOrderId,
+    [&quot;TotalCustomer&quot;] = 0
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrderDetailByIdSettingKey);
+using var multiResultReader = objectDb.QueryMultiple(parameterSet);
+
+var orders = multiResultReader.Read&lt;Order&gt;();
+var orderDetails = multiResultReader.Read&lt;OrderDetails&gt;();
+
+Console.WriteLine($&quot;Total Customers: {parameterSet[&quot;TotalCustomer&quot;]}&quot;);
+Console.WriteLine($&quot;Total Orders: {orders.Count()}&quot;);
+Console.WriteLine($&quot;Total Order Details: {orderDetails.Count()}&quot;);
+</code></pre>
+<h3 id="query-multiple-with-parameter-set-being-a-strongly-typed-object">Query Multiple With Parameter Set Being A Strongly Typed Object</h3>
+<p>Query multiple result sets using a strongly typed object as parameter set.</p>
+<pre><code class="lang-csharp">// Arrange.
+var parameterSet = new OrderByIdQuery
+{
+    OrderId = TestedOrderId,
+    TotalCustomer = 0
+};
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrderDetailByIdSettingKey);
+using var multiResultReader = objectDb.QueryMultiple(parameterSet);
+
+var orders = multiResultReader.Read&lt;Order&gt;();
+var orderDetails = multiResultReader.Read&lt;OrderDetails&gt;();
+
+Console.WriteLine($&quot;Total Customers: {parameterSet.TotalCustomer}&quot;);
+Console.WriteLine($&quot;Total Orders: {orders.Count()}&quot;);
+Console.WriteLine($&quot;Total Order Details: {orderDetails.Count()}&quot;);
+</code></pre>
+<h1 id="datareader-examples">DataReader Examples</h1>
+<h3 id="read-one-row-with-parameter-set-being-an-anonymous-object">Read One Row With Parameter Set Being An Anonymous Object</h3>
+<p>Read one row of data using an anonymous object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new
+{
+    OrderId = TestedOrderId,
+    TotalOrders = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(GettingOrderByIdSettingKey);
+using var reader = objectDb.ExecuteReader(parameterSet);
+reader.Read();
+
+var order = ReadOrder(reader);
+
+Console.WriteLine($&quot;Ship address: {order.ShipAddress}.&quot;);
+Console.WriteLine($&quot;Total orders: {parameterSet.TotalOrders}.&quot;);
+</code></pre>
+<h3 id="read-one-row-with-parameter-set-being-a-hashtable">Read One Row With Parameter Set Being A Hashtable</h3>
+<p>Read one row of data using a Hashtable as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new Hashtable(StringComparer.OrdinalIgnoreCase)
+{
+    [OrderIdParameterName] = TestedOrderId,
+    [&quot;TotalOrders&quot;] = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(GettingOrderByIdSettingKey);
+using var reader = objectDb.ExecuteReader(parameterSet);
+reader.Read();
+
+var order = ReadOrder(reader);
+
+Console.WriteLine($&quot;Ship address: {order.ShipAddress}.&quot;);
+Console.WriteLine($&quot;Total orders: {parameterSet[&quot;TotalOrders&quot;]}.&quot;);
+</code></pre>
+<h3 id="read-one-row-with-parameter-set-being-a-strongly-typed-object">Read One Row With Parameter Set Being A Strongly Typed Object</h3>
+<p>Read one row of data using a strongly typed object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new OrderByIdQuery
+{
+    OrderId = TestedOrderId,
+    TotalOrders = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(GettingOrderByIdSettingKey);
+using var reader = objectDb.ExecuteReader(parameterSet);
+reader.Read();
+
+var order = ReadOrder(reader);
+
+Console.WriteLine($&quot;Ship address: {order.ShipAddress}.&quot;);
+Console.WriteLine($&quot;Total orders: {parameterSet.TotalOrders}.&quot;);
+</code></pre>
+<h1 id="dataset-examples">DataSet Examples</h1>
+<h3 id="read-dataset-with-parameter-set-being-an-anonymous-object">Read DataSet With Parameter Set Being An Anonymous Object</h3>
+<p>Read data using DataSet with an anonymous object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new
+{
+    CustomerId = TestedCustomerId,
+    PageIndex = 1,
+    PageSize = 10,
+    TotalOrders = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrdersByCustomerIdSettingKey);
+using var dataSet = objectDb.ExecuteDataSet(parameterSet);
+var dataTable = dataSet.Tables[0];
+var orders = (from DataRow dataRow in dataTable.Rows select ReadOrder(dataRow)).ToList();
+var totalOrders = Convert.ToInt32(parameterSet.TotalOrders);
+
+Console.WriteLine($&quot;Got {orders.Count} of {totalOrders} orders&quot;);
+</code></pre>
+<h3 id="read-dataset-with-parameter-set-being-a-hashtable">Read DataSet With Parameter Set Being A Hashtable</h3>
+<p>Read data using DataSet with a Hashtable as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new Hashtable(StringComparer.OrdinalIgnoreCase)
+{
+    [&quot;CustomerId&quot;] = TestedCustomerId,
+    [&quot;PageIndex&quot;] = 1,
+    [&quot;PageSize&quot;] = 10,
+    [&quot;TotalOrders&quot;] = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrdersByCustomerIdSettingKey);
+using var dataSet = objectDb.ExecuteDataSet(parameterSet);
+var dataTable = dataSet.Tables[0];
+var orders = (from DataRow dataRow in dataTable.Rows select ReadOrder(dataRow)).ToList();
+var totalOrders = Convert.ToInt32(parameterSet[&quot;TotalOrders&quot;]);
+
+Console.WriteLine($&quot;Got {orders.Count} of {totalOrders} orders&quot;);
+</code></pre>
+<h3 id="read-dataset-with-parameter-set-being-a-strongly-typed-object">Read DataSet With Parameter Set Being A Strongly Typed Object</h3>
+<p>Read data using DataSet with a strongly typed object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new OrdersByCustomerIdQuery
+{
+    CustomerId = TestedCustomerId,
+    PageIndex = 1,
+    PageSize = 10,
+    TotalOrders = 0 // This is an output parameter
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(QueryingOrdersByCustomerIdSettingKey);
+using var dataSet = objectDb.ExecuteDataSet(parameterSet);
+var dataTable = dataSet.Tables[0];
+var orders = (from DataRow dataRow in dataTable.Rows select ReadOrder(dataRow)).ToList();
+var totalOrders = Convert.ToInt32(parameterSet.TotalOrders);
+
+Console.WriteLine($&quot;Got {orders.Count} of {totalOrders} orders&quot;);
+</code></pre>
+<h1 id="executenonquery-examples">ExecuteNonQuery Examples</h1>
+<h3 id="execute-non-query-with-parameter-set-being-an-anonymous-object">Execute Non Query With Parameter Set Being An Anonymous Object</h3>
+<p>Execute a non-query operation using an anonymous object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new
+{
+    EmployeeId = TestedEmployeeId,
+    TerritoryId = 0
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(&quot;InsertEmployeeTerritory&quot;);
+var effectedRows = objectDb.ExecuteNonQuery(parameterSet);
+
+// TerritoryId is an output parameter
+var territoryId = parameterSet.TerritoryId;
+Console.WriteLine(territoryId);
+Console.WriteLine(effectedRows);
+</code></pre>
+<h3 id="execute-non-query-with-parameter-set-being-a-hashtable">Execute Non Query With Parameter Set Being A Hashtable</h3>
+<p>Execute a non-query operation using a Hashtable as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new Hashtable(StringComparer.OrdinalIgnoreCase)
+{
+    [&quot;EmployeeId&quot;] = TestedEmployeeId,
+    [&quot;TerritoryId&quot;] = TestedTerritoryId
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(&quot;InsertEmployeeTerritory&quot;);
+var effectedRows = objectDb.ExecuteNonQuery(parameterSet);
+// TerritoryId is an output parameter
+var territoryId = parameterSet[&quot;TerritoryId&quot;];
+Console.WriteLine(territoryId);
+Console.WriteLine(effectedRows);
+</code></pre>
+<h3 id="execute-non-query-with-parameter-set-being-a-strongly-typed-object">Execute Non Query With Parameter Set Being A Strongly Typed Object</h3>
+<p>Execute a non-query operation using a strongly typed object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new
+{
+    EmployeeId = TestedEmployeeId,
+    TerritoryId = TestedTerritoryId
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(&quot;InsertEmployeeTerritory&quot;);
+var effectedRows = objectDb.ExecuteNonQuery(parameterSet);
+// TerritoryId is an output parameter
+var territoryId = parameterSet.TerritoryId;
+Console.WriteLine(territoryId);
+Console.WriteLine(effectedRows);
+</code></pre>
+<h1 id="executescalar-examples">ExecuteScalar Examples</h1>
+<h3 id="execute-scalar-with-parameter-set-being-an-anonymous-object">Execute Scalar With Parameter Set Being An Anonymous Object</h3>
+<p>Execute a scalar operation using an anonymous object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new
+{
+    ProductId = TestedProductId,
+    ProductName = string.Empty
+};
+using var objectDb = ObjectDbFactory.CreateInstance(CountingProductsSettingKey);
+var orderCount = Convert.ToInt32(objectDb.ExecuteScalar(parameterSet));
+
+// ProductName is an output parameter
+var productName = parameterSet.ProductName;
+
+Console.WriteLine(orderCount);
+Console.WriteLine(productName);
+</code></pre>
+<h3 id="execute-scalar-with-parameter-set-being-a-hashtable">Execute Scalar With Parameter Set Being A Hashtable</h3>
+<p>Execute a scalar operation using a Hashtable as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new Hashtable(StringComparer.OrdinalIgnoreCase)
+{
+    [&quot;ProductId&quot;] = TestedProductId,
+    [&quot;ProductName&quot;] = string.Empty
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(CountingProductsSettingKey);
+var orderCount = Convert.ToInt32(objectDb.ExecuteScalar(parameterSet));
+
+// ProductName is an output parameter
+var productName = parameterSet[&quot;ProductName&quot;];
+
+Console.WriteLine(orderCount);
+Console.WriteLine(productName);
+</code></pre>
+<h3 id="execute-scalar-with-parameter-set-being-a-strongly-typed-object">Execute Scalar With Parameter Set Being A Strongly Typed Object</h3>
+<p>Execute a scalar operation using a strongly typed object as parameter set.</p>
+<pre><code class="lang-csharp">var parameterSet = new OrderCountByProductIdQuery
+{
+    ProductId = TestedProductId
+};
+
+using var objectDb = ObjectDbFactory.CreateInstance(CountingProductsSettingKey);
+var orderCount = Convert.ToInt32(objectDb.ExecuteScalar(parameterSet));
+
+// ProductName is an output parameter
+var productName = parameterSet.ProductName;
+
+Console.WriteLine(orderCount);
+Console.WriteLine(productName);
+</code></pre>
+<hr>
+<p><a href="../index.html">Back to Home</a></p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

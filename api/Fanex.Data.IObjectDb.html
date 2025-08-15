@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IObjectDb | Fanex.Data </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IObjectDb | Fanex.Data ">
+    
+    <meta name="description" content="Represents a object db.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Fanex.Data">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fanex.Data.IObjectDb">
+
+
+
+  <h1 id="Fanex_Data_IObjectDb" data-uid="Fanex.Data.IObjectDb" class="text-break">Interface IObjectDb</h1>
+  <div class="markdown level0 summary"><p>Represents a object db.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fanex.html">Fanex</a>.<a class="xref" href="Fanex.Data.html">Data</a></h6>
+  <h6><strong>Assembly</strong>: Fanex.Data.dll</h6>
+  <h5 id="Fanex_Data_IObjectDb_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IObjectDb</code></pre>
+  </div>
+  <h5 id="Fanex_Data_IObjectDb_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface inherits from IDisposable. Remember to dispose the object db after using it.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteDataSet_" data-uid="Fanex.Data.IObjectDb.ExecuteDataSet*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteDataSet_System_Object_System_Data_Common_DbTransaction_" data-uid="Fanex.Data.IObjectDb.ExecuteDataSet(System.Object,System.Data.Common.DbTransaction)">ExecuteDataSet(object, DbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the results as a DataSet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DataSet ExecuteDataSet(object parameterSet = null, DbTransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteDataSet(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataSet</span></td>
+        <td><p>The results as a DataSet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteDataSetAsync_" data-uid="Fanex.Data.IObjectDb.ExecuteDataSetAsync*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteDataSetAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_" data-uid="Fanex.Data.IObjectDb.ExecuteDataSetAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)">ExecuteDataSetAsync(object, DbTransaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the results as a DataSet asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DataSet&gt; ExecuteDataSetAsync(object parameterSet = null, DbTransaction transaction = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteDataSetAsync(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">DataSet</span>&gt;</td>
+        <td><p>The results as a DataSet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteNonQuery_" data-uid="Fanex.Data.IObjectDb.ExecuteNonQuery*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteNonQuery_System_Object_System_Data_Common_DbTransaction_" data-uid="Fanex.Data.IObjectDb.ExecuteNonQuery(System.Object,System.Data.Common.DbTransaction)">ExecuteNonQuery(object, DbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the number of rows affected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ExecuteNonQuery(object parameterSet = null, DbTransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteNonQuery(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>The number of rows affected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteNonQueryAsync_" data-uid="Fanex.Data.IObjectDb.ExecuteNonQueryAsync*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteNonQueryAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_" data-uid="Fanex.Data.IObjectDb.ExecuteNonQueryAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)">ExecuteNonQueryAsync(object, DbTransaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the number of rows affected asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; ExecuteNonQueryAsync(object parameterSet = null, DbTransaction transaction = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteNonQueryAsync(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">int</span>&gt;</td>
+        <td><p>The number of rows affected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteReader_" data-uid="Fanex.Data.IObjectDb.ExecuteReader*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteReader_System_Object_System_Data_Common_DbTransaction_" data-uid="Fanex.Data.IObjectDb.ExecuteReader(System.Object,System.Data.Common.DbTransaction)">ExecuteReader(object, DbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the first row of the result set as a DataReader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDataReader ExecuteReader(object parameterSet = null, DbTransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteReader(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDataReader</span></td>
+        <td><p>The first row of the result set as a DataReader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteReaderAsync_" data-uid="Fanex.Data.IObjectDb.ExecuteReaderAsync*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteReaderAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_" data-uid="Fanex.Data.IObjectDb.ExecuteReaderAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)">ExecuteReaderAsync(object, DbTransaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the results as a DataReader asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IDataReader&gt; ExecuteReaderAsync(object parameterSet = null, DbTransaction transaction = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteReaderAsync(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IDataReader</span>&gt;</td>
+        <td><p>The first row of the result set as a DataReader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteScalar_" data-uid="Fanex.Data.IObjectDb.ExecuteScalar*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteScalar_System_Object_System_Data_Common_DbTransaction_" data-uid="Fanex.Data.IObjectDb.ExecuteScalar(System.Object,System.Data.Common.DbTransaction)">ExecuteScalar(object, DbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the first column of the first row of the result set as an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ExecuteScalar(object parameterSet = null, DbTransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteScalar(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><p>The first column of the first row of the result set as an object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_ExecuteScalarAsync_" data-uid="Fanex.Data.IObjectDb.ExecuteScalarAsync*"></a>
+  <h4 id="Fanex_Data_IObjectDb_ExecuteScalarAsync_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_" data-uid="Fanex.Data.IObjectDb.ExecuteScalarAsync(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)">ExecuteScalarAsync(object, DbTransaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the scalar value asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;object&gt; ExecuteScalarAsync(object parameterSet = null, DbTransaction transaction = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.ExecuteScalarAsync(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">object</span>&gt;</td>
+        <td><p>The scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_QueryAsync_" data-uid="Fanex.Data.IObjectDb.QueryAsync*"></a>
+  <h4 id="Fanex_Data_IObjectDb_QueryAsync__1_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_" data-uid="Fanex.Data.IObjectDb.QueryAsync``1(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)">QueryAsync&lt;TReturn&gt;(object, DbTransaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure asynchronously and returns the results as a list of specified C# objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TReturn&gt;(object parameterSet = null, DbTransaction transaction = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.QueryAsync(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td><p>The results as a list of specified C# objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_QueryEntityAsync_" data-uid="Fanex.Data.IObjectDb.QueryEntityAsync*"></a>
+  <h4 id="Fanex_Data_IObjectDb_QueryEntityAsync__1_System_Object_System_Data_Common_DbTransaction_System_Threading_CancellationToken_" data-uid="Fanex.Data.IObjectDb.QueryEntityAsync``1(System.Object,System.Data.Common.DbTransaction,System.Threading.CancellationToken)">QueryEntityAsync&lt;TReturn&gt;(object, DbTransaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure asynchronously and returns the results as a single C# object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TReturn&gt; QueryEntityAsync&lt;TReturn&gt;(object parameterSet = null, DbTransaction transaction = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.QueryEntityAsync(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+        <td><p>The results as a single C# object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_QueryEntity_" data-uid="Fanex.Data.IObjectDb.QueryEntity*"></a>
+  <h4 id="Fanex_Data_IObjectDb_QueryEntity__1_System_Object_System_Data_Common_DbTransaction_" data-uid="Fanex.Data.IObjectDb.QueryEntity``1(System.Object,System.Data.Common.DbTransaction)">QueryEntity&lt;TReturn&gt;(object, DbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the results as a single C# object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TReturn QueryEntity&lt;TReturn&gt;(object parameterSet = null, DbTransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.QueryEntity(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TReturn</span></td>
+        <td><p>The results as a single C# object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Fanex_Data_IObjectDb_Query_" data-uid="Fanex.Data.IObjectDb.Query*"></a>
+  <h4 id="Fanex_Data_IObjectDb_Query__1_System_Object_System_Data_Common_DbTransaction_" data-uid="Fanex.Data.IObjectDb.Query``1(System.Object,System.Data.Common.DbTransaction)">Query&lt;TReturn&gt;(object, DbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a stored procedure and returns the results as a list of specified C# objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TReturn&gt; Query&lt;TReturn&gt;(object parameterSet = null, DbTransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">parameterSet</span></td>
+        <td><p>The parameters to pass to the stored procedure. It may be a IDictionary&lt;string, object&gt; or an object.
+Example:</p>
+<pre><code class="lang-csharp">new Dictionary&lt;string, object&gt; { { "param1", 1 }, { "param2", "test" } }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new { param1 = 1, param2 = "test" }</code></pre>
+<p>or</p>
+<pre><code class="lang-csharp">new ParamExample { Param1 = 1, Param2 = "test" }</code></pre>
+<p>After executing the stored procedure, all output parameters are updated in parameterSet.</p>
+<pre><code class="lang-csharp">var parameterSet = new { outputParam1 = 1, outputParam2 = "test" }
+objectDb.Query(parameterSet)
+Console.WriteLine(parameterSet.outputParam1);
+Console.WriteLine(parameterSet.outputParam2);
+The result will be:
+2
+output result</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TReturn&gt;</td>
+        <td><p>The results as a list of specified C# objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><span class="xref">IDisposable</span></div>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

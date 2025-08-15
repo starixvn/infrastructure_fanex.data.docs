@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Introduction | Fanex.Data </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Introduction | Fanex.Data ">
+    
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="Fanex.Data">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p>Fanex.Data - A Dapper-based data access library with configurable stored procedure names.</p>
+<p>Fanex.Data is a lightweight data access library built on top of Dapper, extending its capabilities with configurable stored procedure names via an SpNames.xml file. This key feature is especially useful for managing different versions of stored procedures, allowing you to easily configure your application to call specific versions like xtest, xpre, or UAT stored procedures, even within a production environment. By centralizing the configuration of stored procedure names, Fanex.Data improves maintainability and provides a flexible solution for both SQL Server and MySQL, all while leveraging Dapper's high performance and simplicity.</p>
+<p>========================================</p>
+<h3 id="packages">Packages</h3>
+<hr>
+<ul>
+<li><a href="https://nuget.nexdev.net/packages/Fanex.Data/">Fanex.Data 4.3.4.5</a></li>
+<li><a href="https://nuget.nexdev.net/packages/Fanex.Data.Repository/">Fanex.Data.Repository 4.3.4.5</a></li>
+<li><a href="https://nuget.nexdev.net/packages/Fanex.Data.MySql/">Fanex.Data.MySql 4.3.4.5</a></li>
+<li><a href="https://nuget.nexdev.net/packages/Fanex.Data.SqlServer/">Fanex.Data.SqlServer 4.3.4.5</a></li>
+</ul>
+<h3 id="package-purposes">Package Purposes:</h3>
+<ul>
+<li>Fanex.Data
+<ul>
+<li>The core library simplifies data access by leveraging Dapper. It centrally manages stored procedure names and connections through configuration files.</li>
+</ul>
+</li>
+<li>Fanex.Data.Repository
+<ul>
+<li>Introduces the DynamicRepository class, a simplified wrapper for Fanex.Data's ObjectDb. It provides a more straightforward interface for basic database operations, making it an ideal choice for quick and simple data access needs.</li>
+</ul>
+</li>
+<li>Fanex.Data.MySql
+<ul>
+<li>The MySQL-specific implementation of the Fanex.Data library</li>
+</ul>
+</li>
+<li>Fanex.Data.SqlServer
+<ul>
+<li>The SqlServer-specific implementation of the Fanex.Data library</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li>Execute a stored procedure returning data sets then map them to strongly typed lists.</li>
+<li>Extend ADO.Net CRUD functionalities working with stored procedures.</li>
+<li>Anonymous objects, strongly type objects, or IDictionary typed objects can be used as parameter sets to set values to stored procedure's parameters.</li>
+<li>Automatically assign values of OUTPUT parameters back to the parameter sets; which can be anonymous objects, strongly type objects, or IDictionary typed objects.</li>
+<li>Wrap any exception occurred with diagnostic information, such as: stored procedure name, parameters which are used in the execution, connection string, etc.</li>
+<li>Avoid throwing exceptions if number of values does not meet number of parameters listed in stored procedure definition.</li>
+<li>Allow developers to:
+<ul>
+<li>Configure connection strings and connection aliases.</li>
+<li>Map between columns of result set and objects' properties.</li>
+<li>Define firm parameters, parameters which their values are set in configuration files.</li>
+<li>Configure execution timeout.</li>
+<li>Etc.</li>
+</ul>
+</li>
+<li>Provide ways to extend its functionalities by implementing cross-cuttings, custom connection string providers, or custom setting providers.</li>
+</ul>
+<h2 id="quick-links">Quick Links</h2>
+<ul>
+<li><a href="docs/getting-started.html">Getting Started Guide</a></li>
+<li><a href="docs/usages.html">Usage Examples</a></li>
+<li><a href="api/toc.html">API Reference</a></li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
