@@ -103,7 +103,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SqlProviderName = &quot;System.Data.SqlClient&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string SqlProviderName = &quot;Microsoft.Data.SqlClient&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -124,13 +124,88 @@
 </h3>
 
 
-  <a id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_" data-uid="Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer*"></a>
-  <h4 id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_Fanex_Data_DbSettingProviderManager_" data-uid="Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager)">WithSqlServer(DbSettingProviderManager)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_AddFanexSql_" data-uid="Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql*"></a>
+  <h4 id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_AddFanexSql_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_Boolean_System_String_" data-uid="Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean,System.String)">AddFanexSql(IServiceCollection, IConfiguration, bool, string)</h4>
+  <div class="markdown level1 summary"><p>Registers all dependencies required by fanex data mysql such as SpNames, connection strings, etc. Cannot use this method in case you want to use both Fanex.Data.MySql and Fanex.Data.SqlServer in the same project.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DbSettingProviderManager WithSqlServer(this DbSettingProviderManager currentSession)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddFanexSql(this IServiceCollection services, IConfiguration configuration, bool ignoreRedundantParameters = false, string connectionStringSection = &quot;ConnectionStrings&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The services.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ignoreRedundantParameters</span></td>
+        <td><p>if set to <code>true</code> [ignore redundant parameters in parameterSet].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">connectionStringSection</span></td>
+        <td><p>The connection string section.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceCollection</span></td>
+        <td><p>The IServiceCollection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_AddFanexSql_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_Boolean_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">&lt;Setting Key="QueryProducts" SpName="QueryProducts" DbName="ProductDb" Timeout="600" Plain="true" /&gt;</code></pre>
+<pre><code class="lang-csharp">"FanexConnectionStrings": [
+   {
+   "Name": "ProductDb",
+   "ConnectionString": "Data Source=127.0.0.1;Initial Catalog=bodb_products;integrated security=false;trustservercertificate=true;user id=sa;Password=123456",
+   "ProviderName": "System.Data.MySql"
+ },
+"StoredProcedurePath": "~/App_Data/Fanex.Data",</code></pre>
+<pre><code class="lang-csharp">services.AddFanexSql(configuration, ignoreRedundantParameters: true, connectionStringSection: "FanexConnectionStrings");</code></pre>
+
+
+
+  <a id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_" data-uid="Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer*"></a>
+  <h4 id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_Fanex_Data_DbSettingProviderManager_Microsoft_Extensions_Configuration_IConfiguration_System_String_" data-uid="Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager,Microsoft.Extensions.Configuration.IConfiguration,System.String)">WithSqlServer(DbSettingProviderManager, IConfiguration, string)</h4>
+  <div class="markdown level1 summary"><p>Registers all dependencies required by fanex data mysql such as SpNames, connection strings, etc. This method can be used in case you want to use both Fanex.Data.MySql and Fanex.Data.SqlServer in the same project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DbSettingProviderManager WithSqlServer(this DbSettingProviderManager currentSession, IConfiguration configuration, string connectionStringSection = &quot;ConnectionStrings&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -145,7 +220,20 @@
       <tr>
         <td><span class="xref">DbSettingProviderManager</span></td>
         <td><span class="parametername">currentSession</span></td>
-        <td></td>
+        <td><p>The current session.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">connectionStringSection</span></td>
+        <td><p>The connection string section.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -160,10 +248,28 @@
     <tbody>
       <tr>
         <td><span class="xref">DbSettingProviderManager</span></td>
-        <td></td>
+        <td><p>The DbSettingProviderManager.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_Fanex_Data_DbSettingProviderManager_Microsoft_Extensions_Configuration_IConfiguration_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">&lt;Setting Key="QueryProducts" SpName="QueryProducts" DbName="ProductDb" Timeout="600" Plain="true" /&gt;</code></pre>
+<pre><code class="lang-csharp">"FanexConnectionStrings": [
+   {
+   "Name": "ProductDb",
+   "ConnectionString": "Data Source=127.0.0.1;Initial Catalog=bodb_products;integrated security=false;trustservercertificate=true;user id=sa;Password=123456",
+   "ProviderName": "System.Data.SqlClient"
+ },
+"StoredProcedurePath": "~/App_Data/Fanex.Data",</code></pre>
+<pre><code class="lang-csharp">var resourcePath = configuration.GetSection("StoredProcedurePath").Value;
+DbSettingProviderManager
+    .StartNewSession()
+    .WithMySql(configuration, connectionStringSection)
+    .WithSqlServer(configuration, connectionStringSection)
+    .UseDefaultDbSettingProvider(resourcePath, ignoreRedundantParameters)
+    .Run();</code></pre>
+
 
 </article>
           </div>

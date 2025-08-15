@@ -134,6 +134,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Fanex.Data.Repository.NonQueryCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fanex.Data.Repository.NonQueryCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fanex.Data.Repository.NonQueryCommand",
+      "Summary": "<p sourcefile=\"api/Fanex.Data.Repository.NonQueryCommand.yml\" sourcestartlinenumber=\"1\">Represents a non-query command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Fanex.Data.Repository.yml",
       "output": {
         ".html": {

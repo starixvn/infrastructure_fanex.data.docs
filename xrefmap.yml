@@ -217,12 +217,37 @@ references:
   commentId: T:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions
   fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions
   nameWithType: MySqlDbSettingProviderManagerExtensions
-- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager)
-  name: WithMySql(DbSettingProviderManager)
-  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_WithMySql_Fanex_Data_DbSettingProviderManager_
-  commentId: M:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager)
-  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager)
-  nameWithType: MySqlDbSettingProviderManagerExtensions.WithMySql(DbSettingProviderManager)
+- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean,System.String)
+  name: AddFanexSql(IServiceCollection, IConfiguration, bool, string)
+  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_AddFanexSql_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_Boolean_System_String_
+  commentId: M:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean,System.String)
+  name.vb: AddFanexSql(IServiceCollection, IConfiguration, Boolean, String)
+  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, bool, string)
+  fullName.vb: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Boolean, String)
+  nameWithType: MySqlDbSettingProviderManagerExtensions.AddFanexSql(IServiceCollection, IConfiguration, bool, string)
+  nameWithType.vb: MySqlDbSettingProviderManagerExtensions.AddFanexSql(IServiceCollection, IConfiguration, Boolean, String)
+- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.AddFanexSql*
+  name: AddFanexSql
+  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_AddFanexSql_
+  commentId: Overload:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.AddFanexSql
+  isSpec: "True"
+  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.AddFanexSql
+  nameWithType: MySqlDbSettingProviderManagerExtensions.AddFanexSql
+- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.MySqlProviderName
+  name: MySqlProviderName
+  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_MySqlProviderName
+  commentId: F:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.MySqlProviderName
+  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.MySqlProviderName
+  nameWithType: MySqlDbSettingProviderManagerExtensions.MySqlProviderName
+- uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: WithMySql(DbSettingProviderManager, IConfiguration, string)
+  href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_WithMySql_Fanex_Data_DbSettingProviderManager_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: WithMySql(DbSettingProviderManager, IConfiguration, String)
+  fullName: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager, Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql(Fanex.Data.DbSettingProviderManager, Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: MySqlDbSettingProviderManagerExtensions.WithMySql(DbSettingProviderManager, IConfiguration, string)
+  nameWithType.vb: MySqlDbSettingProviderManagerExtensions.WithMySql(DbSettingProviderManager, IConfiguration, String)
 - uid: Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.WithMySql*
   name: WithMySql
   href: api/Fanex.Data.MySql.MySqlDbSettingProviderManagerExtensions.html#Fanex_Data_MySql_MySqlDbSettingProviderManagerExtensions_WithMySql_
@@ -581,6 +606,12 @@ references:
   commentId: T:Fanex.Data.Repository.INonQueryCommand
   fullName: Fanex.Data.Repository.INonQueryCommand
   nameWithType: INonQueryCommand
+- uid: Fanex.Data.Repository.NonQueryCommand
+  name: NonQueryCommand
+  href: api/Fanex.Data.Repository.NonQueryCommand.html
+  commentId: T:Fanex.Data.Repository.NonQueryCommand
+  fullName: Fanex.Data.Repository.NonQueryCommand
+  nameWithType: NonQueryCommand
 - uid: Fanex.Data.SqlServer
   name: Fanex.Data.SqlServer
   href: api/Fanex.Data.SqlServer.html
@@ -593,18 +624,37 @@ references:
   commentId: T:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions
   fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions
   nameWithType: SqlDbSettingProviderManagerExtensions
+- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean,System.String)
+  name: AddFanexSql(IServiceCollection, IConfiguration, bool, string)
+  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_AddFanexSql_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_Boolean_System_String_
+  commentId: M:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean,System.String)
+  name.vb: AddFanexSql(IServiceCollection, IConfiguration, Boolean, String)
+  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, bool, string)
+  fullName.vb: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Boolean, String)
+  nameWithType: SqlDbSettingProviderManagerExtensions.AddFanexSql(IServiceCollection, IConfiguration, bool, string)
+  nameWithType.vb: SqlDbSettingProviderManagerExtensions.AddFanexSql(IServiceCollection, IConfiguration, Boolean, String)
+- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql*
+  name: AddFanexSql
+  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_AddFanexSql_
+  commentId: Overload:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql
+  isSpec: "True"
+  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.AddFanexSql
+  nameWithType: SqlDbSettingProviderManagerExtensions.AddFanexSql
 - uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.SqlProviderName
   name: SqlProviderName
   href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_SqlProviderName
   commentId: F:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.SqlProviderName
   fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.SqlProviderName
   nameWithType: SqlDbSettingProviderManagerExtensions.SqlProviderName
-- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager)
-  name: WithSqlServer(DbSettingProviderManager)
-  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_Fanex_Data_DbSettingProviderManager_
-  commentId: M:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager)
-  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager)
-  nameWithType: SqlDbSettingProviderManagerExtensions.WithSqlServer(DbSettingProviderManager)
+- uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: WithSqlServer(DbSettingProviderManager, IConfiguration, string)
+  href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_Fanex_Data_DbSettingProviderManager_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: WithSqlServer(DbSettingProviderManager, IConfiguration, String)
+  fullName: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager, Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer(Fanex.Data.DbSettingProviderManager, Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: SqlDbSettingProviderManagerExtensions.WithSqlServer(DbSettingProviderManager, IConfiguration, string)
+  nameWithType.vb: SqlDbSettingProviderManagerExtensions.WithSqlServer(DbSettingProviderManager, IConfiguration, String)
 - uid: Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.WithSqlServer*
   name: WithSqlServer
   href: api/Fanex.Data.SqlServer.SqlDbSettingProviderManagerExtensions.html#Fanex_Data_SqlServer_SqlDbSettingProviderManagerExtensions_WithSqlServer_
